@@ -45,7 +45,9 @@ public class Strings_Cycles {
         scanner.close();
     }
 
-    // 4.1.
+    // 4.1. Ввести с консоли строку, сохранить ее в строковой переменной
+    //Ввести с консоли подстроку, сохранить ее во второй строковой переменной
+    //Подсчитать сколько раз подстрока встречается в строке и вывести это значение на экран.
     public static int counter(String text, String subString) {
         int count = 0;
         int startIndex = 0;
@@ -59,7 +61,8 @@ public class Strings_Cycles {
         return count;
     }
 
-    // 4.2.
+    // 4.2.Ввести строку
+   //Заменить в строке все слова "кака" и "бяка" на "вырезано цензурой"
     public static String censorWords(String text, String word1, String word2) {
         String censored = "вырезано цензурой";
         text = text.replaceAll(word1, censored);
@@ -67,7 +70,8 @@ public class Strings_Cycles {
         return text;
     }
 
-    // 4.3.
+    // 4.3. Ввести строку с датой формата: 31.12.2020
+   // Преобразовать строку даты в формат: 2020-12-31
     public static String formatDateString(String date) {
 
         String day = date.substring(0, 2);
@@ -84,7 +88,7 @@ public class Strings_Cycles {
         }
     }
 
-    // 4.4.
+    // 4.4. Сделать задание 4.3. с использованием классов Date и SimpleDateFormat и их соответствующих методов.
     public static String formatDateWithDateFormat(String dateString) {
         try {
             SimpleDateFormat inputFormat = new SimpleDateFormat("dd.MM.yyyy");
